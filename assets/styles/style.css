@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,300;1,900&display=swap');
+
+main p::first-letter  {
+  font-size: 30px;
+  font-weight: bolder;
+  color: black;
+}
+
+body
+{
+  margin: 0;
+}
+
+h2
+{
+  color: black;
+  text-align: center;
+}
+
+header
+{
+  display: inline;
+}
+
+header p ,main p
+{
+  text-indent: 2em;
+}
+
+div a:hover
+{
+  font-weight:bolder;
+  color: white
+}
+
+div a:visited
+{
+  color: purple
+}
+
+div a:active
+{
+  color: green
+}
+a
+{
+  text-decoration: none;
+}
+
+main
+{
+  padding: 20px;
+  line-height: 30px;
+  overflow: auto;
+}
+
+main p
+{
+  color: black;
+}
+
+footer
+{
+  padding: 3px;
+  color: white;
+  background-color: #00a2c6;
+  text-align: center;
+  font-weight: bold;
+}

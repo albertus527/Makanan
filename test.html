@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Makanan
+  </title>
+
+  <link rel="stylesheet" href="assets/styles/style.css">
+  
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <style>
+
+  .profile header {
+    text-align: center;
+  }
+
+  .profile img {
+    width: 200px;
+  }
+
+  .card {
+   
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+    overflow: auto;
+    background-color:white;
+    margin-left: 10px;
+  }
+
+  .data {
+    padding: 20px;
+    margin-top: 20px;
+    overflow: auto;
+  }
+
+
+  .judul
+  {
+    font-size: 20px;
+    padding: 1px;
+    background-color: #00c8eb;
+    text-align: center;
+    color: white;
+    width: 100%;
+    top: 0px;
+  }
+  .nav
+  {
+    font-size: 20px;
+    padding: -30px;
+    background-color: #00c8eb;
+    text-align: center;
+    color: white;
+    width: 100%;
+    top: 0px;
+    position:sticky;
+  }
+
+  .jui{
+    float: left;
+    max-width:300px;
+    height:auto;
+
+
+  }
+
+  .ayam
+  {
+    float: right;
+    max-width:275px;
+    height:auto;
+  }
+
+  table{
+    text-align:left;
+  }
+
+  .color
+  {
+    color: black;
+    float : left;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .button {
+    background-color:#00c8eb;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline;
+    font-size: 20px;
+    border: 0;
+    cursor:pointer;
+  }
+
+  .button:hover
+  {
+    font-weight: bolder;
+  }
+
+  #daftar {
+    display: none;
+    box-shadow: 0px 4px 5px 0 rgba(0, 0, 0, 0.2);
+    width: 80%;
+   padding: 20px;
+   
+  }
+
+  #daftar a {
+    display: inline-block;
+    font-size: 20px;
+    background-color:white;
+    padding: 5px;
+  }
+
+</style>
+
+<header>
+  <div class ="judul">
+    <h1>
+      Bahan Makanan
+    </h1>
+
+  </div>
+
+  <div class="nav">
+    <button onclick="tombol()" class="button">Menu</button>
+    </div>
+    <center>
+      <div id="daftar">
+        <a href="#sapi"> Sapi </a>
+        <a href="#ayam"> Ayam </a>
+        <a href="#ikan"> Ikan </a>
+        <a href="#about"> Tentang Saya </a>
+      </div>
+    </center>
+
+  </header>
+
+  <main>
+    <div id ="konten utama">
+      <article id ="sapi" class="card" >
+        <h2>
+          Sapi
+        </h2>
+        <img src="assets/sapi.jpg" alt="sapi"  class ="jui" >
+        <p class ="card">
+          Sapi merupakan salah satu bahan makanan yang digemari oleh masyarakat Indonesia, mulai dari bayi hingga orang tua sekalipun mayoritas menyukainya. Sapi dapat di olah menjadi berbagai jenis makanan, mulai dari makanan pinggir jalan / <i> streetfood</i> yang harganya terjangkau hingga di kelas restoran mewah sekalipun.
+          Di dunia sapi memiliki banyak jenis mulai dari Sapi Lokal, Wagyu, Sapi Kobe, Sapi Australia dan Sapi Amerika, tiap jenis memiliki karakteristik yang berbeda beda.
+        </p>
+
+      </article>
+
+      <article id = "ayam" class="card">
+        <h2>
+          Ayam
+        </h2>
+        <img src="assets/ayam.jpg" alt="ayam" height="400px" class="ayam" >
+        <p class="card">
+          Selain sapi, ayam pun digemari oleh berbagai kalangan masyarakat Indonesia, selain harganya yang lebih murah dibandingkan sapi (Pulau Jawa) rasanya pun nikmat apabila bisa mengolahnya. Ayam pun dapat diolah menjadi berbagai jenis masakan, seperti: <br>
+          <ol style="color:black">
+            <li> Ayam Rica - Rica </li>
+            <li> Ayam Bakar </li>
+            <li> Ayam Goreng </li>
+            <li> dll </li>
+          </ol>
+        </p>
+      </article>
+
+      <article id="ikan" class="card">
+
+        <section>
+          <h2 >
+            Ikan
+          </h2>
+
+          <img src="assets/ikan.jpg" alt="ikan"class="jui" >
+          <p class="card">
+            Ikan pun digemari oleh seluruh masyarakat Indonesia, walaupun harganya tidak semurah ayam (Pulau Jawa) tetapi ini sangat di nikmati. Mulai dari ikan air tawar dan mayoritas ikan air laut dapat di konsumsi oleh umum. Rata rata ikan yang dikonsumsi oleh masyarakat ialah:
+            <ul class="color">
+              <li> Ikan Kakap </li>
+              <li> Ikan Lele </li>
+              <li> Ikan Gurame </li>
+              <li> Ikan Tongkol </li>
+              <li> dan sebagainya </li>
+            </ul>
+          </p>
+
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <aside>
+    <article id="about" class="profile data">
+
+      <header>
+        <h1>Tentang Saya</h1>
+        <figure>
+          <img src="assets/Foto Profil Albert.jpg" class="profile">
+
+        </figure>
+      </header>
+
+      <section style="text-align: center">
+        <center>
+          <table>
+            <tr>
+              <th>Nama Lengkap</th>
+              <td>Albert Matthew Andika Brahmantyo</td>
+            </tr>
+            <tr>
+              <th>Tempat / Tanggal Lahir</th>
+              <br>
+              <td>6 September 1998</td>
+            </tr>
+            <tr>
+              <th>Domisili</th>
+              <td>Bandung</td>
+            </tr>
+            <tr>
+              <th>Email</th>
+              <td>albertus527@gmail.com</td>
+            </tr>
+            <tr>
+              <th>No HP</th>
+              <td>0821-2683-6883</td>
+            </tr>
+          </table>
+        </section>
+      </article>
+    </aside></center>
+
+    <footer>
+      <p>Bandung 2021</p>
+    </footer>
+
+  </body>
+  </html>
